@@ -48,6 +48,10 @@ void cornernessHarris()
     cv::imshow(windowName, without_nms);
 
     // STUDENTS NEET TO ENTER THIS CODE (C3.2 Atom 4)
+    // TODO: Your task is to locate local maxima in the Harris response matrix 
+    // and perform a non-maximum suppression (NMS) in a local neighborhood around 
+    // each maximum. The resulting coordinates shall be stored in a list of keypoints 
+    // of the type `vector<cv::KeyPoint>`.
 
     // Look for prominent corners and instantiate keypoints
     vector<cv::KeyPoint> keypoints;
@@ -95,11 +99,6 @@ void cornernessHarris()
     cv::drawKeypoints(dst_norm_scaled, keypoints, visImage, cv::Scalar::all(-1), cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
     cv::imshow(windowName, visImage);
     cv::waitKey(0);
-
-    // TODO: Your task is to locate local maxima in the Harris response matrix 
-    // and perform a non-maximum suppression (NMS) in a local neighborhood around 
-    // each maximum. The resulting coordinates shall be stored in a list of keypoints 
-    // of the type `vector<cv::KeyPoint>`.
 
 }
 
