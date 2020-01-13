@@ -19,7 +19,7 @@ void magnitudeSobel()
     // apply smoothing
     cv::Mat blurred = imgGray.clone();
     int filterSize = 5;
-    int stdDev = 2.0;
+    int stdDev = 2;
     cv::GaussianBlur(imgGray, blurred, cv::Size(filterSize, filterSize), stdDev);
 
     // create filter kernels
