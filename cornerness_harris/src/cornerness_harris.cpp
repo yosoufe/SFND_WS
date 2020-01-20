@@ -26,10 +26,10 @@ void cornernessHarris()
     cv::Mat dst, dst_norm, dst_norm_scaled, without_nms;
     dst = cv::Mat::zeros(img.size(), CV_32FC1);
     cv::cornerHarris(img, dst, blockSize, apertureSize, k, cv::BORDER_DEFAULT);
-    cv::normalize(dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat());
+    cv::normalize(dst, dst_norm, 0, 255, cv::NORM_MINMAX, CV_32FC1, cv::Mat()); // CV_8SC1 CV_32FC1
     cv::convertScaleAbs(dst_norm, dst_norm_scaled);
 
-    without_nms = dst_norm_scaled.clone();
+    without_nms = dst_norm.clone();
 
     for( int i = 0; i < dst_norm.rows ; i++ )
     {
