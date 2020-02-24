@@ -68,8 +68,8 @@ void showLidarTopview(std::vector<LidarPoint> &lidarPoints, cv::Size worldSize, 
     cv::waitKey(0); // wait for key to be pressed
 }
 
-
-void clusterLidarWithROI(std::vector<BoundingBox> &boundingBoxes, std::vector<LidarPoint> &lidarPoints)
+void clusterLidarWithROI(std::vector<BoundingBox> &boundingBoxes,
+                         std::vector<LidarPoint> &lidarPoints)
 {
     // store calibration data in OpenCV matrices
     cv::Mat P_rect_xx(3,4,cv::DataType<double>::type); // 3x4 projection matrix after rectification
