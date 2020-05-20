@@ -31,9 +31,3 @@ Code: https://github.com/yosoufe/SFND_Unscented_Kalman_Filter
 # Certificate:
 
 https://confirm.udacity.com/447VUSA
-
-<object data="https://github.com/yosoufe/SFND_WS/raw/master/Certificate.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/yosoufe/SFND_WS/raw/master/Certificate.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yosoufe/SFND_WS/raw/master/Certificate.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
